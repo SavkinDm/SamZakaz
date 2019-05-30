@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+
+        android:layout_marginTop="164dp"
+        android:text="Введите логин"
+        android:textSize="17dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.292"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Input Name -->
+    <EditText
+        android:id="@+id/inputLogin"
+        style="@style/Theme.AppCompat.Light.DarkActionBar"
+
+        android:layout_width="241dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="72dp"
+        android:backgroundTint="@color/colorMain"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorLink="@color/colorMain"
+        android:textCursorDrawable="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <!-- Input Name -->
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="241dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/colorMain"
+        android:textColorLink="@color/colorMain"
+        android:textCursorDrawable="@null"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+
+
+    <!-- Button Create Product -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="157dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/colorMain"
+        android:text="Войти"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputPassword" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="148dp"
+
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:text="Введите пароль"
+        android:textSize="17dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLogin" />
+
+</android.support.constraint.ConstraintLayout>

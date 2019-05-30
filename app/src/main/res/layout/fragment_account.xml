@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/Help"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CartHistory"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:srcCompat="@color/colorMain" />
+
+    <ImageView
+        android:id="@+id/CartHistory"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Settings"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:srcCompat="@color/colorMain"
+        />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Поддержка"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Help"
+
+        app:layout_constraintStart_toEndOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/Help" />
+
+    <ImageView
+        android:id="@+id/Settings"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AccInfo"
+        app:srcCompat="@color/colorMain" />
+
+    <ImageView
+        android:id="@+id/AccInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@color/colorMain" />
+
+    <ImageView
+        android:id="@+id/Accph"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/AccInfo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/AccInfo"
+        app:srcCompat="@drawable/account_icon" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorMain" />
+
+    <TextView
+        android:id="@+id/Putname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Имя"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Accph"
+        app:layout_constraintTop_toTopOf="@+id/AccInfo" />
+
+    <TextView
+        android:id="@+id/PutPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Номер телефона"
+        app:layout_constraintStart_toEndOf="@+id/Accph"
+        app:layout_constraintTop_toBottomOf="@+id/Putname" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/AccInfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/AccInfo"
+        app:srcCompat="@drawable/forwardblack" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Settings"
+        app:srcCompat="@drawable/settings1" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Настройки"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/Settings"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="@+id/Settings" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Settings"
+        app:layout_constraintEnd_toEndOf="@+id/Settings"
+        app:layout_constraintTop_toTopOf="@+id/Settings"
+        app:srcCompat="@drawable/forwardblack" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/CartHistory"
+        app:layout_constraintStart_toStartOf="@+id/CartHistory"
+        app:layout_constraintTop_toTopOf="@+id/CartHistory"
+        app:srcCompat="@drawable/history_icon" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="История заказов"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/CartHistory"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/CartHistory" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/CartHistory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CartHistory"
+        app:srcCompat="@drawable/forwardblack" />
+
+    <Button
+        android:id="@+id/ExitBtn"
+        android:layout_width="202dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="32dp"
+        android:background="@android:color/holo_red_light"
+        android:shadowColor="@android:color/black"
+        android:text="Выйти из аккаунта"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Личный кабинет"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Help"
+        app:layout_constraintEnd_toEndOf="@+id/Help"
+        app:layout_constraintTop_toTopOf="@+id/Help"
+        app:srcCompat="@drawable/forwardblack" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Help"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Help"
+        app:srcCompat="@drawable/queston" />
+
+</android.support.constraint.ConstraintLayout>

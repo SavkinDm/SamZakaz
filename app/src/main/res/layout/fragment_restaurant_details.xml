@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/spisokBlud1"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:background="@android:color/white"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DescriptionOfRest1">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/PhotoOfRest"
+        android:layout_width="match_parent"
+        android:layout_height="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/favourites" />
+
+    <TextView
+        android:id="@+id/NameOfRest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poiretoneregular"
+        android:text="Название"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhotoOfRest" />
+
+    <TextView
+        android:id="@+id/DescriptionOfRest1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/prataregular"
+        android:text="Описание"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NameOfRest1" />
+
+    <TextView
+        android:id="@+id/RatingOfRest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:text="3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhotoOfRest" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/RatingOfRest"
+        app:layout_constraintTop_toBottomOf="@+id/PhotoOfRest"
+        app:srcCompat="@drawable/fill_star" />
+
+    <ImageView
+        android:id="@+id/back_from_rest_details"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backwhiteuniversal" />
+
+    <ImageView
+        android:id="@+id/addToCartBckgnd"
+        android:layout_width="386dp"
+        android:layout_height="147dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@color/colorMain" />
+
+    <Button
+        android:id="@+id/addToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="24dp"
+        android:text="Добавить"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/addToCartBckgnd"
+        app:layout_constraintStart_toStartOf="@+id/addToCartBckgnd" />
+
+    <Button
+        android:id="@+id/dontAddToCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Отмена"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/addToCartBckgnd"
+        app:layout_constraintEnd_toEndOf="@+id/addToCartBckgnd" />
+
+    <TextView
+        android:id="@+id/nameOfcurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Название"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addToCartBckgnd" />
+
+    <TextView
+        android:id="@+id/PriceOfcurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Цена"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addToCartBckgnd" />
+
+    <TextView
+        android:id="@+id/kolvo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Колличество:"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/addToCartBckgnd"
+        app:layout_constraintTop_toBottomOf="@+id/nameOfcurrent" />
+
+    <TextView
+        android:id="@+id/numberOfcurrent"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="56dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/minus"
+        app:layout_constraintTop_toTopOf="@+id/addToCartBckgnd" />
+
+    <ImageButton
+        android:id="@+id/minus"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:scaleType="centerCrop"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/kolvo"
+        app:layout_constraintTop_toTopOf="@+id/addToCartBckgnd"
+        app:srcCompat="@drawable/minus" />
+
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="56dp"
+        android:scaleType="centerCrop"
+        android:text="+"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/numberOfcurrent"
+        app:layout_constraintTop_toTopOf="@+id/addToCartBckgnd"
+        app:srcCompat="@drawable/plus" />
+
+</android.support.constraint.ConstraintLayout>
